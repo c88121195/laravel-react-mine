@@ -7,6 +7,7 @@ import Freelancer from '../pages/Freelancer'
 import Owner from '../pages/Owner'
 import Detail from '../pages/Detail'
 import Star from '../pages/StarPage'
+import CaseMng from '../pages/CaseManager'
 import Test from '../pages/Test'
 import Testform from '../pages/TestForm'
 import NotFound from '../pages/NotfoundPage'
@@ -20,6 +21,7 @@ const Index = () => {
             <Route path="/owner" element={<Owner />} />
             <Route path="/detail" element={<Detail />} />
             <Route path="/star" element={<Star />} />
+            <Route path="/casemng" element={<CaseMng />} />
             <Route path="/test" element={<Test />} />
             <Route path="/*" element={<NotFound />} />
             <Route path="/form" element={<Testform />} />{/* TestForm 頁面 */}
