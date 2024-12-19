@@ -1,9 +1,9 @@
-.container {
+.fcontainer {
     padding: 0 10px;
     display: flex;
 }
 
-.options {
+.foptions {
     flex: 3;
     height: 100%;
     padding: 5px 20px;
@@ -12,13 +12,13 @@
     border-radius: 15px;
 }
 
-.code {}
+.fcode {}
 
 .filter {}
 
-.price {}
+.fprice {}
 
-.keywords {
+.fkeywords {
     display: flex;
     /* 使用彈性盒模型 */
     flex-wrap: wrap;
@@ -26,7 +26,7 @@
     /* 設置按鈕之間的間距 */
 }
 
-.keywords>a {
+.fkeywords>a {
     color: rgb(54, 54, 54);
     margin: 5px 0;
     padding: 5px 10px;
@@ -38,23 +38,22 @@
     /* 文字居中 */
 }
 
-.maincontainer {
+.fmaincontainer {
     flex: 8;
     padding: 10px 20px 10px 0px;
 }
 
-.search {
+.fsearch {
     display: flex;
 }
 
-.searchtab {
-    flex: 5;
+.fsearch>div {
+    flex: 2;
 }
 
-.keyword {
-    flex: 6;
+.fsearch .fkeyword {
+    flex: 3;
     height: 45px;
-    width: 380px;
     border-radius: 30px;
     border: 2px solid lightgray;
     margin: 10px;
@@ -63,16 +62,16 @@
     text-align: center;
 }
 
-.keyword img {
+.fkeyword img {
     margin: 0 30px;
 }
 
-.keyword p {
+.fkeyword p {
     color: #626D7E;
     margin: 0 10px;
 }
 
-.hanber {
+.fkeyword {
     flex: 1;
     height: 40px;
     /* border-radius: 20px; */
@@ -81,126 +80,7 @@
     text-align: center;
 }
 
-/* 彈出框樣式 */
-.modal {
-    display: none;
-    /* 初始隱藏 */
-    position: fixed;
-    z-index: 1;
-    /* width: 100%;  */
-    /* height: 100%;  */
-    /* overflow: auto; */
-}
-
-.modal-content {
-    background-color: #D9D9D9;
-    margin: 10px;
-    padding: 5px 10px;
-    border: 1px solid #888;
-    width: 200px;
-    height: auto;
-    position: fixed;
-    /* top: 50%;  */
-    right: 0;
-    /* transform: translateY(-50%); */
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-
-}
-
-.close {
-    color: #aaa;
-    font-size: 28px;
-    font-weight: bold;
-    position: absolute;
-    right: 1%;
-    top: -1%;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.myself {
-    flex: 3;
-    display: flex;
-}
-
-.photo {
-    flex: 1;
-    background-color: white;
-    margin: 5px;
-    border-radius: 10px;
-}
-
-.myself2 {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.chatcall {
-    flex: 1;
-    display: flex;
-}
-
-.chatcall img {
-    width: 90%;
-}
-
-.chat {
-    flex: 1;
-    margin: 4px;
-    border-radius: 20px;
-}
-
-.call {
-    flex: 1;
-    margin: 4px;
-    border-radius: 20px;
-}
-
-.introduction {
-    flex: 2;
-    font-size: 14px;
-}
-
-.information {
-    flex: 1;
-    font-size: 14px;
-    margin: -5px 0 5px 0;
-}
-
-.verify {
-    display: flex;
-    margin: 0;
-}
-
-.Star {
-    display: flex;
-    margin: 0 10px;
-}
-
-.case {
-    flex: 3;
-    display: flex;
-    flex-direction: column;
-    font-size: 14px;
-
-}
-
-.everycase {
-    flex: 1;
-    background-color: white;
-    padding: 5px;
-    margin: 5px;
-}
-
-.order {
+.forder {
     display: flex;
     height: 40px;
     border-radius: 15px;
@@ -209,14 +89,14 @@
     margin: 10px;
 }
 
-.order p,
-.order>a {
+.forder p,
+.forder>a {
     flex: 3;
     margin: 10px;
     color: #354052;
 }
 
-.contentone {
+.fcontentone {
     background-color: #7fc5d280;
     height: 300px;
     border-radius: 10px;
@@ -224,7 +104,15 @@
     display: flex;
 }
 
-.content {
+.fcontentone a {
+    color: inherit;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+}
+
+.fcontent {
     background-color: #F5F5DC;
     height: 300px;
     border-radius: 10px;
@@ -232,14 +120,14 @@
     display: flex;
 }
 
-.content1 {
+.fcontent1 {
     flex: 3;
     display: flex;
     flex-direction: column;
     position: relative;
 }
 
-.hot {
+.fhot {
     float: left;
     position: absolute;
     left: 5px;
@@ -249,7 +137,7 @@
     width: 40px;
 }
 
-.companyphoto {
+.fcompanyphoto {
     flex: 8;
     /* height: 170px;
     width: 170px; */
@@ -261,7 +149,7 @@
     align-items: center;
 }
 
-.companyphoto img {
+.fcompanyphoto img {
     max-width: 100%;
     /* 確保圖片不超出父容器 */
     max-height: 100%;
@@ -269,85 +157,85 @@
     margin: auto;
 }
 
-.companyname {
+.fcompanyname {
     flex: 2;
     text-align: center;
     margin: 5px;
 }
 
-.companystar {
+.fcompanystar {
     flex: 2;
     text-align: center;
     margin: 5px;
     display: flex;
 }
 
-.companystar>div:first-child {
+.fcompanystar>div:first-child {
     flex: 1;
 }
 
-.green {
+.fgreen {
     flex: 1;
 }
 
-.star {
+.fstar {
     flex: 6;
 }
 
-.star img {
+.fstar img {
     margin: 0 5px;
     display: flex;
     justify-content: flex-start;
 }
 
-.content2 {
+.fcontent2 {
     flex: 7;
     display: flex;
     flex-direction: column;
 }
 
-.title {
+.ftitle {
     flex: 1;
 }
 
-.title>h1 {
+.ftitle>h1 {
     margin: 5px;
     padding: 5px;
 }
 
-.set {
+.fset {
     flex: 1;
     display: flex;
 }
 
-.date {
+.fdate {
     flex: 1;
     margin-right: 10px;
 }
 
-.caseprice {
+.fcaseprice {
     flex: 1;
     margin-left: 10px;
 }
 
-.location {
+.flocation {
     flex: 1;
 }
 
-.casecontent {
+.fcasecontent {
     flex: 1;
 }
 
-.require {
+.frequire {
     flex: 1;
     display: flex;
 }
 
-.require div {
+.frequire div {
     display: flex;
 }
 
-.require div p {
+.frequire div p {
     background-color: #F0F0F0;
     border-radius: 20px;
     padding: 4px 15px;
@@ -357,34 +245,34 @@
     align-items: center;
 }
 
-.contentnew img {
+.fcontentnew img {
     margin: 15px 0 0 0;
 }
 
-.content .contentnew img {
+.fcontent .contentnew img {
     margin: 10px 0 0 0;
 }
 
-.content3 {
+.fcontent3 {
     flex: 2;
     display: flex;
     flex-direction: column;
 }
 
-.time {
+.ftime {
     flex: 1;
     font-weight: 700;
     padding: 0 10px;
     margin: 20px 5px;
 }
 
-.content3btn {
+.fcontent3btn {
     flex: 2;
     display: flex;
     flex-direction: column;
 }
 
-.content3btn>a {
+.fcontent3btn>a {
     flex: 1.5;
     color: black;
     background-color: #F5F5DC;
@@ -399,7 +287,7 @@
     align-items: center;
 }
 
-.content .content3btn>a {
+.fcontent .content3btn>a {
     flex: 1.5;
     color: black;
     background-color: #81C7D4;
@@ -414,11 +302,11 @@
     align-items: center;
 }
 
-.collect {}
+.fcollect {}
 
-.takecase {}
+.ftakecase {}
 
-.people {
+.fpeople {
     flex: 1;
     padding-top: 15px;
     margin: 10px 20px 0px 20px;
@@ -429,7 +317,7 @@
     align-items: center;
 }
 
-.frequency {
+.ffrequency {
     flex: 1;
     margin: 0px 20px;
     font-size: 14px;
@@ -439,7 +327,7 @@
     align-items: center;
 }
 
-.tab {
+.ftab {
     height: 40px;
     display: flex;
     margin: 10px;
@@ -447,7 +335,7 @@
     align-items: center;
 }
 
-.tab a {
+.ftab a {
     color: white;
     background-color: #464646;
     border-radius: 5px;
@@ -459,7 +347,7 @@
     /* 垂直置中 */
 }
 
-.tab img {
+.ftab img {
     width: 20px;
     display: flex;
     justify-content: center;
@@ -468,22 +356,22 @@
     /* 垂直置中 */
 }
 
-.tab p {
+.ftab p {
     padding: 0 5px;
     margin: 0 15px 5px 15px;
 }
 
-.Leftnext {
+.fLeftnext {
     display: flex;
     height: 20px;
 }
 
-.Rightnext {
+.fRightnext {
     display: flex;
     height: 20px;
 }
 
-.Leftnext img {
+.fLeftnext img {
     flex: 1;
     width: 20px;
     display: flex;
@@ -493,14 +381,14 @@
     /* 垂直置中 */
 }
 
-.Rightnext img {
+.fRightnext img {
     flex: 1;
 }
 
-.Leftnext p {
+.fLeftnext p {
     flex: 3;
 }
 
-.Rightnext p {
+.fRightnext p {
     flex: 3;
 }

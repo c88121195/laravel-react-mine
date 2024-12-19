@@ -3,9 +3,9 @@ import Price from '../../../../public/img/price.png'
 
 const Options = () => (
     // <!-- options -->
-    <div className="options">
+    <div className="foptions">
         {/* <!-- code type --> */}
-        <div className="code">
+        <div className="fcode">
             <h3>篩選條件</h3>
             <hr />
             <h3>程式分類</h3>
@@ -21,7 +21,7 @@ const Options = () => (
         </div>
         <hr />
         {/* <!-- filter --> */}
-        <div className="filter">
+        <div className="ffilter">
             <h3>企業相關篩選</h3>
             <p>評價</p>
             <p>今日更新</p>
@@ -30,14 +30,14 @@ const Options = () => (
         </div>
         <hr />
         {/* <!-- price --> */}
-        <div className="price">
+        <div className="fprice">
             <h3>案件價錢</h3>
             <img src={Price} alt="" />
         </div>
         <hr />
         {/* <!-- Keywords --> */}
         <h3>關鍵字</h3>
-        <div className="keywords">
+        <div className="fkeywords">
             <a href="#">HTML</a>
             <a href="#">C++</a>
             <a href="#">UI</a>

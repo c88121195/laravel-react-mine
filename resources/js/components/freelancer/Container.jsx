@@ -6,7 +6,7 @@ import Space from './Space'
 const Container = () => (
     <div>
         {/* <!-- container --> */}
-        <div className="container">
+        <div className="fcontainer">
             <Options />
             <Maincontainer />
             <Space />

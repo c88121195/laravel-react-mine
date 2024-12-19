@@ -17,33 +17,33 @@ import Fire from '../../../../public/img/Fire.png'
 
 
 const Maincontainer = () => (
-    <div className="maincontainer">
+    <div className="omaincontainer">
         {/* <!-- tab/search --> */}
-        <div className="search">
-            <div className="searchtab">
+        <div className="osearch">
+            <div className="osearchtab">
                 <h2>缺工&ensp; &gt; &ensp;HTML</h2>
             </div>
             {/* <!-- search keyword --> */}
-            <div className="keyword">
+            <div className="okeyword">
                 <a href="#">
                     <img src="https://github.com/PHPD08-Village/PHPD08-Team/blob/main/img/Icon/Search.png?raw=true" alt="search" />
                 </a>
                 <p style={{ fontsize: '30px' }}>|</p>
                 <p>search keyword</p>
             </div>
-            <div className="space"></div>
+            <div className="ospace"></div>
             {/* <!-- hanber --> */}
             {/* <!-- 觸發彈出框的按鈕 --> */}
-            <div className="hanber">
+            <div className="ohanber">
                 {/* <!-- 觸發彈出框的連結 --> */}
                 {/* <!-- 彈出框結構 --> */}
-                <a href="#" id="openModalBtn" className="open-modal-btn" onClick={(e) => { e.preventDefault(); openModal(); }}>
+                <a href="#" id="openModalBtn" className="oopen-modal-btn" onClick={(e) => { e.preventDefault(); openModal(); }}>
                     <img src={Hanber} style={{ width: '40px' }} alt="Hanber" />
                 </a>
             </div>
         </div>
         {/* <!-- order --> */}
-        <div className="order">
+        <div className="oorder">
             <p style={{ flex: 5 }}>顯示 5-5 of 共 2222 筆資料</p>
             <a href="#">最近更新</a>
             <a href="#">點閱率最高</a>
@@ -53,95 +53,99 @@ const Maincontainer = () => (
         {/* <!-- content --> */}
         <div>
             {/* <!-- contentone --> */}
-            <div className="contentone">
-                <div className="content1">
-                    <div className="hot"><img src="https://github.com/PHPD08-Village/PHPD08-Team/blob/main/img/Icon/Crown.png?raw=true" alt="hot" /></div>
-                    <div style={{ flex: 1 }}></div>
-                    <div className="companyphoto">
-                        <img src={Company1} alt="company1" />
-                    </div>
-                    <div className="companyname">
-                    </div>
-                    <div className="companystar">
-                        <div></div>
-                        <div className="green">
-                            <img src={Green} alt="green" />
+            <div className="ocontentone">
+                <div className="ocontent1">
+                    <a href="/personalinfo">
+                        <div className="ohot"><img src="https://github.com/PHPD08-Village/PHPD08-Team/blob/main/img/Icon/Crown.png?raw=true" alt="hot" /></div>
+                        <div style={{ flex: 1 }}></div>
+                        <div className="ocompanyphoto">
+                            <img src={Company1} alt="company1" />
                         </div>
-                        <div className="star">
-                            <img src={Star} alt="star" />
+                        <div className="ocompanyname">
                         </div>
-                        <p>評論數</p>
-                    </div>
+                        <div className="ocompanystar">
+                            <div></div>
+                            <div className="ogreen">
+                                <img src={Green} alt="green" />
+                            </div>
+                            <div className="ostar">
+                                <img src={Star} alt="star" />
+                            </div>
+                            <p>評論數</p>
+                        </div>
+                    </a>
                 </div>
-                <div className="content2">
-                    <div className="title">
-                        <div>
-                            <h1>王曉明</h1>
-                            <p>手機已驗證</p>
-                            <img src={Tick} alt="tick" />
-                            <p>信箱已驗證</p>
-                            <img src={Tick} alt="tick" />
+                <div className="ocontent2">
+                    <a href="/personalinfo">
+                        <div className="otitle">
+                            <div>
+                                <h1>王曉明</h1>
+                                <p>手機已驗證</p>
+                                <img src={Tick} alt="tick" />
+                                <p>信箱已驗證</p>
+                                <img src={Tick} alt="tick" />
+                            </div>
                         </div>
-                    </div>
-                    <div className="set">
-                        <div className="date">
-                            <h4>工作年資：3~4年</h4>
+                        <div className="oset">
+                            <div className="odate">
+                                <h4>工作年資：3~4年</h4>
+                            </div>
+                            <div className="ocaseprice">
+                            </div>
                         </div>
-                        <div className="caseprice">
+                        <div className="olocation">地區：台灣/台北市信義區</div>
+                        <div className="ocasecontent">
+                            快樂狗勾為一個新上市的品牌，需要設計一個具有品牌風格的網站，
+                            專注於提供優質、健康、和有趣的狗狗用品...更多
                         </div>
-                    </div>
-                    <div className="location">地區：台灣/台北市信義區</div>
-                    <div className="casecontent">
-                        快樂狗勾為一個新上市的品牌，需要設計一個具有品牌風格的網站，
-                        專注於提供優質、健康、和有趣的狗狗用品...更多
-                    </div>
-                    <div className="require">
-                        <p style={{ margin: '16px 4px' }}>使用語言：</p>
-                        <div>
-                            <p>HTML</p>
-                            <p>C++</p>
-                            <p>CSS</p>
-                            <p>Java</p>
-                            <p>PHP</p>
+                        <div className="orequire">
+                            <p style={{ margin: '16px 4px' }}>使用語言：</p>
+                            <div>
+                                <p>HTML</p>
+                                <p>C++</p>
+                                <p>CSS</p>
+                                <p>Java</p>
+                                <p>PHP</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                <div className="contentnew">
+                <div className="ocontentnew">
                     <img src="https://github.com/PHPD08-Village/PHPD08-Team/blob/main/img/Icon/New.png?raw=true" alt="new" />
                 </div>
-                <div className="content3">
-                    <div className="time">3分鐘前更新</div>
-                    <div className="content3btn">
-                        <a className="collect" href="#">收藏</a>
-                        <a className="takecase" href="#">委託</a>
+                <div className="ocontent3">
+                    <div className="otime">3分鐘前更新</div>
+                    <div className="ocontent3btn">
+                        <a className="ocollect" href="#">收藏</a>
+                        <a className="otakecase" href="#">委託</a>
                     </div>
-                    <div className="people"><p>已完成專案件數：10 件</p></div>
-                    <div className="frequency">7777 瀏覽次數</div>
+                    <div className="opeople"><p>已完成專案件數：10 件</p></div>
+                    <div className="ofrequency">7777 瀏覽次數</div>
                     <div style={{ flex: 1.5 }}></div>
                 </div>
             </div>
             {/* <!-- content2 --> */}
-            <div className="content">
-                <div className="content1">
+            <div className="ocontent">
+                <div className="ocontent1">
                     <div style={{ flex: 1 }}></div>
-                    <div className="companyphoto">
+                    <div className="ocompanyphoto">
                         <img src={Company2} alt="company1" />
                     </div>
-                    <div className="companyname">
+                    <div className="ocompanyname">
                     </div>
-                    <div className="companystar">
+                    <div className="ocompanystar">
                         <div></div>
-                        <div className="green">
+                        <div className="ogreen">
                             <img src={Red} alt="red" />
                         </div>
-                        <div className="star">
+                        <div className="ostar">
                             <img src={Star} alt="star" />
                         </div>
                         <p>評論數</p>
                     </div>
                 </div>
-                <div className="content2">
-                    <div className="title">
+                <div className="ocontent2">
+                    <div className="otitle">
                         <div>
                             <h1>王曉明</h1>
                             <p>手機已驗證</p>
@@ -150,20 +154,20 @@ const Maincontainer = () => (
                             <img src={Tick} alt="tick" />
                         </div>
                     </div>
-                    <div className="set">
-                        <div className="date">
+                    <div className="oset">
+                        <div className="odate">
                             <h4>工作年資：3~4年</h4>
                         </div>
-                        <div className="caseprice">
+                        <div className="ocaseprice">
                             {/* <h4>案件預算：$20,000 - $50,000</h4> */}
                         </div>
                     </div>
-                    <div className="location">地區：台灣/台北市信義區</div>
-                    <div className="casecontent">
+                    <div className="olocation">地區：台灣/台北市信義區</div>
+                    <div className="ocasecontent">
                         快樂狗勾為一個新上市的品牌，需要設計一個具有品牌風格的網站，
                         專注於提供優質、健康、和有趣的狗狗用品...更多
                     </div>
-                    <div className="require">
+                    <div className="orequire">
                         <p style={{ margin: '16px 4px' }}>使用語言：</p>
                         <div>
                             <p>HTML</p>
@@ -175,42 +179,42 @@ const Maincontainer = () => (
                     </div>
                 </div>
 
-                <div className="contentnew">
+                <div className="ocontentnew">
                     <img src={Fire} alt="new" />
                 </div>
-                <div className="content3">
-                    <div className="time">3分鐘前更新</div>
-                    <div className="content3btn">
-                        <a className="collect" href="#">收藏</a>
-                        <a className="takecase" href="#">委託</a>
+                <div className="ocontent3">
+                    <div className="otime">3分鐘前更新</div>
+                    <div className="ocontent3btn">
+                        <a className="ocollect" href="#">收藏</a>
+                        <a className="otakecase" href="#">委託</a>
                     </div>
-                    <div className="people"><p>已完成專案件數：10 件</p></div>
-                    <div className="frequency">7777 瀏覽次數</div>
+                    <div className="opeople"><p>已完成專案件數：10 件</p></div>
+                    <div className="ofrequency">7777 瀏覽次數</div>
                     <div style={{ flex: 1.5 }}></div>
                 </div>
             </div>
             {/* <!-- content3 --> */}
-            <div className="content">
-                <div className="content1">
-                    {/* <!-- <div className="hot"><img src="../img/hot.png" alt="" /></div> --> */}
+            <div className="ocontent">
+                <div className="ocontent1">
+                    {/* <!-- <div className="ohot"><img src="../img/hot.png" alt="" /></div> --> */}
                     <div style={{ flex: 1 }}></div>
-                    <div className="companyphoto">
+                    <div className="ocompanyphoto">
                         <img src={Company3} alt="" />
                     </div>
-                    <div className="companyname">
+                    <div className="ocompanyname">
                     </div>
-                    <div className="companystar">
+                    <div className="ocompanystar">
                         <div></div>
-                        <div className="green">
+                        <div className="ogreen">
                             <img src={Green} alt="green" />
                         </div>
-                        <div className="star">
+                        <div className="ostar">
                             <img src={Star} alt="star" />
                         </div>
                     </div>
                 </div>
-                <div className="content2">
-                    <div className="title">
+                <div className="ocontent2">
+                    <div className="otitle">
                         <div>
                             <h1>王曉明</h1>
                             <p>手機已驗證</p>
@@ -219,19 +223,19 @@ const Maincontainer = () => (
                             <img src={Tick} alt="tick" />
                         </div>
                     </div>
-                    <div className="set">
-                        <div className="date">
+                    <div className="oset">
+                        <div className="odate">
                             <h4>工作年資：3~4年</h4>                        </div>
-                        <div className="caseprice">
+                        <div className="ocaseprice">
                             {/* <h4>案件預算：$20,000 - $50,000</h4> */}
                         </div>
                     </div>
-                    <div className="location">地區：台灣/台北市信義區</div>
-                    <div className="casecontent">
+                    <div className="olocation">地區：台灣/台北市信義區</div>
+                    <div className="ocasecontent">
                         快樂狗勾為一個新上市的品牌，需要設計一個具有品牌風格的網站，
                         專注於提供優質、健康、和有趣的狗狗用品...更多
                     </div>
-                    <div className="require">
+                    <div className="orequire">
                         <p style={{ margin: '16px 4px' }}>使用語言：</p>
                         <div>
                             <p>HTML</p>
@@ -242,40 +246,40 @@ const Maincontainer = () => (
                         </div>
                     </div>
                 </div>
-                <div className="contentnew"></div>
-                <div className="content3">
-                    <div className="time">3分鐘前更新</div>
-                    <div className="content3btn">
-                        <a className="collect" href="#">收藏</a>
-                        <a className="takecase" href="#">委託</a>
+                <div className="ocontentnew"></div>
+                <div className="ocontent3">
+                    <div className="otime">3分鐘前更新</div>
+                    <div className="ocontent3btn">
+                        <a className="ocollect" href="#">收藏</a>
+                        <a className="otakecase" href="#">委託</a>
                     </div>
-                    <div className="people"><p>已完成專案件數：10 件</p></div>
-                    <div className="frequency">7777 瀏覽次數</div>
+                    <div className="opeople"><p>已完成專案件數：10 件</p></div>
+                    <div className="ofrequency">7777 瀏覽次數</div>
                     <div style={{ flex: 1.5 }}></div>
                 </div>
             </div>
             {/* <!-- content4 --> */}
-            <div className="content">
-                <div className="content1">
-                    {/* <!-- <div className="hot"><img src="../img/hot.png" alt="" /></div> --> */}
+            <div className="ocontent">
+                <div className="ocontent1">
+                    {/* <!-- <div className="ohot"><img src="../img/hot.png" alt="" /></div> --> */}
                     <div style={{ flex: 1.5 }}></div>
-                    <div className="companyphoto">
+                    <div className="ocompanyphoto">
                         <img src={Company4} alt="" />
                     </div>
-                    <div className="companyname">
+                    <div className="ocompanyname">
                     </div>
-                    <div className="companystar">
+                    <div className="ocompanystar">
                         <div></div>
-                        <div className="green">
+                        <div className="ogreen">
                             <img src={Red} alt="red" />
                         </div>
-                        <div className="star">
+                        <div className="ostar">
                             <img src={Star} alt="star" />
                         </div>
                     </div>
                 </div>
-                <div className="content2">
-                    <div className="title">
+                <div className="ocontent2">
+                    <div className="otitle">
                         <div>
                             <h1>王曉明</h1>
                             <p>手機已驗證</p>
@@ -284,19 +288,19 @@ const Maincontainer = () => (
                             <img src={Tick} alt="tick" />
                         </div>
                     </div>
-                    <div className="set">
-                        <div className="date">
+                    <div className="oset">
+                        <div className="odate">
                             <h4>工作年資：3~4年</h4>                        </div>
-                        <div className="caseprice">
+                        <div className="ocaseprice">
                             {/* <h4>案件預算：$20,000 - $50,000</h4> */}
                         </div>
                     </div>
-                    <div className="location">地區：台灣/台北市信義區</div>
-                    <div className="casecontent">
+                    <div className="olocation">地區：台灣/台北市信義區</div>
+                    <div className="ocasecontent">
                         快樂狗勾為一個新上市的品牌，需要設計一個具有品牌風格的網站，
                         專注於提供優質、健康、和有趣的狗狗用品...更多
                     </div>
-                    <div className="require">
+                    <div className="orequire">
                         <p style={{ margin: '16px 4px' }}>使用語言：</p>
                         <div>
                             <p>HTML</p>
@@ -307,40 +311,40 @@ const Maincontainer = () => (
                         </div>
                     </div>
                 </div>
-                <div className="contentnew"></div>
-                <div className="content3">
-                    <div className="time">3分鐘前更新</div>
-                    <div className="content3btn">
-                        <a className="collect" href="#">收藏</a>
-                        <a className="takecase" href="#">委託</a>
+                <div className="ocontentnew"></div>
+                <div className="ocontent3">
+                    <div className="otime">3分鐘前更新</div>
+                    <div className="ocontent3btn">
+                        <a className="ocollect" href="#">收藏</a>
+                        <a className="otakecase" href="#">委託</a>
                     </div>
-                    <div className="people"><p>已完成專案件數：10 件</p></div>
-                    <div className="frequency">7777 瀏覽次數</div>
+                    <div className="opeople"><p>已完成專案件數：10 件</p></div>
+                    <div className="ofrequency">7777 瀏覽次數</div>
                     <div style={{ flex: 1.5 }}></div>
                 </div>
             </div>
             {/* <!-- content5 --> */}
-            <div className="content">
-                <div className="content1">
-                    {/* <!-- <div className="hot"><img src="../img/hot.png" alt="" /></div> --> */}
+            <div className="ocontent">
+                <div className="ocontent1">
+                    {/* <!-- <div className="ohot"><img src="../img/hot.png" alt="" /></div> --> */}
                     <div style={{ flex: 1.5 }}></div>
-                    <div className="companyphoto">
+                    <div className="ocompanyphoto">
                         <img src={Company5} alt="" />
                     </div>
-                    <div className="companyname">
+                    <div className="ocompanyname">
                     </div>
-                    <div className="companystar">
+                    <div className="ocompanystar">
                         <div></div>
-                        <div className="green">
+                        <div className="ogreen">
                             <img src={Green} alt="green" />
                         </div>
-                        <div className="star">
+                        <div className="ostar">
                             <img src={Star} alt="star" />
                         </div>
                     </div>
                 </div>
-                <div className="content2">
-                    <div className="title">
+                <div className="ocontent2">
+                    <div className="otitle">
                         <div>
                             <h1>王曉明</h1>
                             <p>手機已驗證</p>
@@ -349,19 +353,19 @@ const Maincontainer = () => (
                             <img src={Tick} alt="tick" />
                         </div>
                     </div>
-                    <div className="set">
-                        <div className="date">
+                    <div className="oset">
+                        <div className="odate">
                             <h4>工作年資：3~4年</h4>                        </div>
-                        <div className="caseprice">
+                        <div className="ocaseprice">
                             {/* <h4>案件預算：$20,000 - $50,000</h4> */}
                         </div>
                     </div>
-                    <div className="location">地區：台灣/台北市信義區</div>
-                    <div className="casecontent">
+                    <div className="olocation">地區：台灣/台北市信義區</div>
+                    <div className="ocasecontent">
                         快樂狗勾為一個新上市的品牌，需要設計一個具有品牌風格的網站，
                         專注於提供優質、健康、和有趣的狗狗用品...更多
                     </div>
-                    <div className="require">
+                    <div className="orequire">
                         <p style={{ margin: '16px 4px' }}>使用語言：</p>
                         <div>
                             <p>HTML</p>
@@ -372,30 +376,30 @@ const Maincontainer = () => (
                         </div>
                     </div>
                 </div>
-                <div className="contentnew"></div>
-                <div className="content3">
-                    <div className="time">3分鐘前更新</div>
-                    <div className="content3btn">
-                        <a className="collect" href="#">收藏</a>
-                        <a className="takecase" href="#">委託</a>
+                <div className="ocontentnew"></div>
+                <div className="ocontent3">
+                    <div className="otime">3分鐘前更新</div>
+                    <div className="ocontent3btn">
+                        <a className="ocollect" href="#">收藏</a>
+                        <a className="otakecase" href="#">委託</a>
                     </div>
-                    <div className="people"><p>已完成專案件數：10 件</p></div>
-                    <div className="frequency">7777 瀏覽次數</div>
+                    <div className="opeople"><p>已完成專案件數：10 件</p></div>
+                    <div className="ofrequency">7777 瀏覽次數</div>
                     <div style={{ flex: 1.5 }}></div>
                 </div>
             </div>
         </div>
         {/* <!-- tab --> */}
-        <div className="tab">
+        <div className="otab">
             <a href="#"><img src={Left} alt="" /></a>
-            <a href="#"><div className="Leftnext"><img src={Leftnext} alt="" /><p>上一頁</p></div></a>
+            <a href="#"><div className="oLeftnext"><img src={Leftnext} alt="" /><p>上一頁</p></div></a>
             <a style={{ color: ' #464646', backgroundColor: '#FFA500', border: '1px solid #000000' }} href="#">1</a>
             <a href="#">2</a>
             <a href="#">3</a>
             <p>...</p>
             <a href="#">7</a>
             <a href="#">8</a>
-            <a href="#"><div className="Rightnext"><p>下一頁</p><img src={Rightnext} alt="" /></div></a>
+            <a href="#"><div className="oRightnext"><p>下一頁</p><img src={Rightnext} alt="" /></div></a>
             <a href="#"><img src={Right} alt="" /></a>
         </div>
     </div>
